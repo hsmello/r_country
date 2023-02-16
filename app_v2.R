@@ -1,11 +1,11 @@
 # https://shiny.rstudio.com/images/shiny-cheatsheet.pdf
-# Load R packages
+# Import packages
 library(shiny)
 library(shinythemes)
 library(jsonlite)
 
 data <- fromJSON('https://restcountries.com/v2/all')
-# Define UI
+
 ui <- fluidPage(theme = shinytheme("darkly"),
                 navbarPage(
                   "Test App",
@@ -44,9 +44,6 @@ ui <- fluidPage(theme = shinytheme("darkly"),
 ) # fluidPage
 
 # Define server function  
-#country_capital <- data$capital
-#country_population <- data$population
-#country_population <- data$population
 
 country_name <- data$name
 server <- function(input, output) {
@@ -83,7 +80,6 @@ server <- function(input, output) {
   
 
 } # server
-
 
 # Create Shiny object
 shinyApp(ui = ui, server = server)
