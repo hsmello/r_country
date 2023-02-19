@@ -4,7 +4,7 @@ library(shiny)
 library(shinythemes)
 library(jsonlite)
 
-data <- fromJSON('https://restcountries.com/v2/all')
+data <- fromJSON('https://restcountries.com/v2/all') #import data
 
 ui <- fluidPage(theme = shinytheme("darkly"),
                 navbarPage(
@@ -37,8 +37,7 @@ ui <- fluidPage(theme = shinytheme("darkly"),
                            ) # mainPanel
                            
                   ), # Navbar 1, tabPanel
-                  tabPanel("Navbar 2", "This panel is intentionally left blank"),
-                  tabPanel("Navbar 3", "This panel is intentionally left blank")
+                  tabPanel("Navbar 2", ""),
                   
                 ) # navbarPage
 ) # fluidPage

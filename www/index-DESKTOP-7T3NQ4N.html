@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    
+    <title>Country Explorer</title>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    
+    {{ headContent() }}
+    {{ bootstrapLib() }}
+    
+    <link href="css/index.css" type="text/css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=GFS Neohellenic' rel='stylesheet'/>
+    
+  </head>
+  <body>
+    <!-- Nav bar -->
+  <div class="initial_screen">
+    
+    <header>
+        <img
+          src="app/images/globe.png"
+          alt="logo"
+          class="logo"
+        />
+        <nav>
+          <ul class="nav_links">
+            <li><a href="countries">Countries</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+    
+    <!-- Home -->
+    
+    <div class="home">
+      
+      <div class="left_half">
+      
+        <div class="text_left_main">
+          <div class="text_left_main_first">
+            D I S C O V E R
+          </div>
+          <div class="text_left_main_second">
+            Get information. Get <div class="text_left_main_second_b"> Knowledge</div>.
+          </div>
+        </div>
+        
+       <div class="elipse"></div>
+        
+      </div>
+      <div class="right_half">
+        <img
+          src="app/images/world-map-blue.png"
+          alt="map"
+          class="map"
+        />
+      </div>
+      
+    </div>
+  </div>
+
+    <!-- Countries -->
+    <div class="countries">
+      <div class="countries_bg">
+
+        
+      </div>
+      AAAA
+    </div>    
+
+
+
+  <!-- JS -->
+  <script>
+    fetch('https://restcountries.com/v2/all')
+      .then(res => {
+        return res.json();
+      })
+      .then(data => {
+        console.log(data);
+      })
+      .catch(error => console.log(error));
+  </script>
+
+
+  </body>
+</html>
