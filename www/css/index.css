@@ -1,3 +1,7 @@
+/* to do
+   1. add mobile dynamic format
+   2. make css for 2nd page   */
+
 body {
   background: linear-gradient(90deg, rgba(17,22,25,1) 50%, rgba(30,30,30,1) 53%, rgba(30,30,30,1) 75%);
   margin: 0px;
@@ -113,11 +117,6 @@ header {
   position: relative;
   background-color: #f3f3f3;
   height: 100vh;
-}
-
-
-.flag {
-  width: 100px;  
 }
 
 .country_outputs {
